@@ -1,0 +1,90 @@
+{
+	"start":
+	{
+		"text":"",
+		"links":
+		[
+			{
+				"type":"question",
+				"question":"",
+				"options":
+				[
+					{
+						"type":"option",
+						"text":"",
+						"next":{"paragraphe":"", "variable":"none"}
+					},
+					{
+						"type":"option",
+						"text":"",
+						"next":{"paragraphe":"", "variable":"", "valeur":""}
+					}
+				]
+			}
+		]
+	},
+	"_Fin":
+	{
+		"text":"",
+		"links": [{"type":"fin", "evenement":"none"}]
+	},
+	"_modeles":
+	{
+	"text":"",
+	"links":
+		[
+			{"type":"direct", "next":{"paragraphe":"", "variable":"none"},
+			{"type":"fin", "evenement":"none"}},
+			{
+				"type":"question",
+				"question":"",
+				"options":
+				[
+					{
+						"type":"option",
+						"text":"",
+						"next":{"paragraphe":"", "variable":"none"}
+					},
+					{
+						"type":"option",
+						"text":"",
+						"next":{"paragraphe":"", "variable":"", "valeur":""}
+					},
+					{
+						"type":"condition", "condition":"if", "enonce":"",
+						"options":
+						[
+							{
+								"type":"option",
+								"text":"",
+								"next":{"paragraphe":"", "variable":"none"}
+							}
+						]
+					},
+					{
+						"type":"condition", "condition":"else",
+						"options":
+						[
+							{
+								"type":"option",
+								"text":"C'est la bonne option !",
+								"next":{"paragraphe":"finale", "variable":"none"}
+							}
+						]
+					},
+					{
+						"type":"option",
+						"text":"Encore une option...",
+						"next":{"paragraphe":"finale", "variable":"none"}
+					}
+				]
+			},
+			{"type":"condition", "condition":"if", "enonce":"",
+			"links":
+				[
+					{"type":"direct", "next":{"paragraphe":"", "variable":"none"}}
+				]
+			}
+		]
+	}
+}

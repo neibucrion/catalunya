@@ -1,0 +1,46 @@
+{
+"start":
+	{
+		"text":"As soon as you enter the hall, a great din can be heard at the massive steel entrance door tha is violently slammed as your son enters with a smile on his face in his elegant dandy costume...",
+		"links":
+		[
+			{
+				"type":"question",
+				"question":"How do you respond to that smashing entrance?",
+				"options":
+				[
+					{
+						"type":"option",
+						"text":"You ask him where he was.",
+						"next":{"paragraphe":"ouSeTrouver", "variable":"none"}
+					},
+					{
+						"type":"option",
+						"text":"You remind him that he's expected.",
+						"next":{"paragraphe":"attendu", "variable":"none"}
+					},
+					{
+						"type":"option",
+						"text":"You scold him for fooling around with the workers again...",
+						"next":{"paragraphe":"gronder", "variable":"none"}
+					}
+				]
+			}
+		]
+	},
+	"ouSeTrouver":
+	{
+		"text":"\"Where did you go again?\", you ask him sternly.<br/>\"Where do you want me to go!\" he replies with a big smile, \"But to the tavern to fraternize with your friendly workers and keep them up to date with the latest anarchist publications from Barcelona?... Don't worry my dear father! I haven't forgotten your great event and so here I am to honour you with my presence. If you allow me now, I'll run and get ready!\"<br/>That being said, he hurries out of the room and up to his apartment.",
+		"links":[{"type":"fin", "evenement":"NettoieArriveFils"}]
+	},
+	"attendu":
+	{
+		"text":"\"Do you remember I was waiting for you?\" you say with a grave expression. "Of course, my dear father!" your son replies with a big smile on his lips. \"But you also know that I never miss an opportunity to drop by the tavern and instruct your workers about the latest anarchist publications coming from Barcelona... Nevertheless, here I am and I hasten upstairs to change and be presentable in front of our guests!\" And so he hastens to leave the room and go up to his apartment.",
+		"links":[{"type":"fin", "evenement":"NettoieArriveFils"}]
+	},
+	"gronder":
+	{
+		"text":"\"I bet you were at the tavern again getting my workers all riled up!\" you exclaim in an annoyed tone. \"That's right, Father! I confess it...\" your son replies with a broad smile. \"Someone has to inform the people about the latest anarchist publications from Barcelona. Nevertheless, I'm here, as you wished to attend this great event and I hasten to get ready!\" He then storms out of the room and goes up to his apartment.",
+		"links":[{"type":"fin", "evenement":"NettoieArriveFils"}]
+	}
+}

@@ -1,0 +1,15 @@
+{
+    "persos":
+    {
+        "Josep":{"position":"salon", "evenement":"none"},
+        "Maria":{"position":"chambreMaria", "evenement":"SceneIntroMaria"},
+        "Jordi":{"position":"nowhere", "evenement":"none"},
+        "Clara":{"position":"chambreClara", "evenement":"SceneIntroClara"}
+    },
+    "pj":"Josep",    
+	"variables":
+	{
+		"premierRegard":"lache",
+		"parlerFils":"pasEncore"
+	}
+}

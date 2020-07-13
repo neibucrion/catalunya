@@ -1,0 +1,41 @@
+{
+"start":
+  {
+    "text":"As soon as he entered the room, all eyes turned to him : his brilliant appearance seemed to light up the place. But it was on you that his blue and daring eyes stopped, as if he couldn't take them off.",
+    "links":
+    [
+      {
+        "type":"question",
+        "question":"What did you do?",
+        "options":
+        [
+          {
+            "type":"option",
+            "text":"Look away.",
+            "next":{"paragraphe":"away", "variable":"none"}
+          },
+          {
+            "type":"option",
+            "text":"Keep facing him.",
+            "next":{"paragraphe":"face", "variable":"premierRegard", "valeur":"tenu"}
+          }
+        ]
+      }
+    ]
+  },
+  "away":
+  {
+    "text":"You stopped looking at him but he then slowly crossed the room to come at you...",
+    "links": [{"type":"direct", "next":{"paragraphe":"retour", "variable":"none"}}]
+  },
+  "face":
+  {
+    "text":"You kept staring intensely at each other for a time that seemed to never end and as an uneasiness threatened to take hold of the room, he spoke out...",
+    "links": [{"type":"direct", "next":{"paragraphe":"retour", "variable":"none"}}]
+  },
+  "retour":
+  {
+    "text":"This very morning, before it happened, everything seemed so much simpler...",
+    "links": [{"type":"fin", "evenement":"none"}]
+  }
+}

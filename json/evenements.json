@@ -1,0 +1,102 @@
+{
+  "start":
+  {
+    "actions":
+    [
+      {"type":"scene", "scene":"01_Rencontre"},
+	  {"type":"variable", "variable":"parlerFils","aleatoire":true,"valeurs":["pasEncore","arrive"]},
+      {"type":"evenement", "evenement":"arriveFils"}
+	  
+    ]
+  },
+  "arriveFils":
+  {
+    "actions":
+    [
+		{"type":"condition", "condition":"if", "enonce":"vars.parlerFils == 'arrive'",
+			"actions":
+			[
+				{"type":"perso", "perso":"Jordi", "destination":"hall"},
+				{"type":"modifEvenement", "element":"lieu","lieu":"hall", "evenement":"SceneArriveFils"}
+			]
+		},
+	]
+  },
+  "SceneArriveFils":
+  {
+    "actions":
+    [
+		{"type":"scene", "scene":"02_ApparitionJordi"}
+	]
+  },
+  "NettoieArriveFils":
+  {
+    "actions":
+    [
+		{"type":"variable", "variable":"parlerFils","valeur":"parle","aleatoire":false},
+		{"type":"modifEvenement", "element":"lieu","lieu":"hall", "evenement":"none"},
+		{"type":"perso", "perso":"Jordi", "destination":"chambreJordi"},
+		{"type":"modifEvenement", "element":"perso","perso":"Jordi", "evenement":"SceneSePreparer"}
+	]
+  },
+  "SceneIntroMaria":
+  {
+    "actions":
+    [
+		{"type":"scene", "scene":"03_IntroMaria"}
+	]
+  },
+  "SceneIntroClara":
+  {
+    "actions":
+    [
+		{"type":"scene", "scene":"04_IntroClara"}
+	]
+  },
+  "SceneSePreparer":
+  {
+    "actions":
+    [
+		{"type":"scene", "scene":"05_SePreparer"}
+	]
+  },
+  "_base":
+  {
+    "actions":
+    [
+	]
+  },
+  "_modeles":
+  {
+    "actions":
+    [
+      {"type":"scene", "scene":""},
+      {"type":"evenement", "evenement":""},
+
+      {"type":"variable", "variable":"","valeur":"","aleatoire":false},
+	  {"type":"variable", "variable":"","aleatoire":true,"valeurs":["",""]},
+
+      {"type":"perso", "perso":"Josep","destination":""},
+      {"type":"porte", "porte":{"entree":"","sortie":""}, "etat":true},
+	  
+	  {"type":"changeContexte", "lieu":"", "contexte":""},
+
+      {"type":"modifEvenement", "element":"perso","perso":"Josep", "evenement":""},
+      {"type":"modifEvenement", "element":"lieu","lieu":"", "evenement":""},
+
+      {"type":"condition", "condition":"if", "enonce":"",
+        "actions":[]
+      },
+      {"type":"condition", "condition":"elif", "enonce":"",
+        "actions":[]
+      },
+      {"type":"condition", "condition":"else", "actions":[]
+      },
+
+
+      {"type":"log", "log":""},
+      {"type":"log", "log":"Valeur de  =", "variable":""}
+    ]
+  }
+
+}

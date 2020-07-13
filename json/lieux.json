@@ -1,0 +1,156 @@
+{"lieux":
+    {
+        "terrasse":
+		{
+			"title":"The terrace",
+			"occupants":[], 
+			"evenement":"none", 
+			"descriptions":
+			[
+				{
+					"type":"text",
+					"text":"It's an elegant terrace with red tiles arranged in an elaborate pattern on which an outdoor table is installed. From here, you can see the imposing heights of the Pyrenees in the distance.<br/>A series of large baroque French windows lead into the living room and a small staircase leads into the garden."
+				}
+			],
+			"contexte":""
+		},
+        "salon":
+		{
+			"title":"The Living Room",
+			"occupants":[],
+			"evenement":"none",			
+			"descriptions":
+			[
+				{
+					"type":"text",
+					"text":"The living room is the main room of the house. It is in the image of the eccentric architect who designed it. The ceiling is not smooth but curved with strange festoons, which give the room an organic and even erotic character. The furniture of the room itself: the cutlery cupboards with glass doors, the large table and chairs surrounding it have surprisingly curved shapes that make them look like a huge flower with scattered petals.<br/> The large French windows overlooking the terrace are made of multicoloured glass with fascinating curves. A curiously ornamented high wooden door leads to the hall of the house."
+				}
+			],
+			"contexte":"You are alone in the living room while the guests are about to arrive! Where is everyone?<br/>The access to the terrace is currently closed."
+		},
+        "hall":
+		{
+			"title":"The Main Hall",
+			"occupants":[], 
+			"evenement":"none", 
+			"descriptions":
+			[
+				{
+					"type":"text",
+					"text":"The hall still betrays the medieval and peasant origins of the house. It is a large, dark room with an uneven floor leaning against the rock. <br/> On one side a wide staircase, whose forged metal banister bursts into strange structures, leads to the ballroom, on the other a high ornamented wooden door leads to the living room. On the opposite wall a thick curiously curved steel door opens to the outside."
+				}
+			],
+			"contexte":"The door to the outside is currently closed."
+		},
+        "ballroom":
+		{
+			"title":"The Ball Room",
+			"occupants":[], 
+			"evenement":"none", 
+			"descriptions":
+			[
+				{
+					"type":"text",
+					"text":"We're here in the heart of the house. This spacious room with its complex and refined woodwork is topped by a tapered conical dome, pierced with small holes and ending with a glass opening that discreetly lets the sunlight in. At the back, a small stage is set up to make room for the musicians.<br/> On one side, a door opens onto the staircase that leads to the hall. On the other side, a wide, sloping, circular corridor leads to the private rooms."
+				}
+			],
+			"contexte":""
+		},
+        "couloir":
+		{
+			"title":"The Corridor",
+			"occupants":[], 
+			"evenement":"none", 
+			"descriptions":
+			[
+				{
+					"type":"text",
+					"text":"This wide, sloping, circular corridor winds around the large central dome of the ballroom. On the various floors, doors open to the left to the private rooms. At the very top, a door leads to the roof of the house."
+				}
+			],
+			"contexte":""
+		},
+        "chambreJosep":
+		{	
+			"title":"Josep's Room",
+			"occupants":[], 
+			"evenement":"none", 
+			"descriptions":
+			[
+				{
+					"type":"text",
+					"text":"Josep's room is sober and has mainly in addition to the double bed, a tidy desk by the window and a small adjoining bathroom.<br/>A door leads to the large corridor."
+				}
+			],
+			"contexte":""
+		},
+        "chambreMaria":
+		{
+			"title":"Maria's Room",
+			"occupants":[], 
+			"evenement":"none", 
+			"descriptions":
+			[
+				{
+					"type":"text",
+					"text":"Maria's apartments are luxurious and elegant. A large four-poster bed sits enthroned in the room. Next to the window is a huge modernist dressing table topped by a large, extravagantly shaped mirror, complete with all make-up accessories. In addition to the elegant bathroom, there are many strangely decorated wardrobes filled with luxurious clothes and jewellery.<br/>The door leads to the large corridor."
+				}
+			],
+			"contexte":""
+		},
+        "chambreClara":
+		{
+			"title":"Clara's Room",
+			"occupants":[], 
+			"evenement":"none", 
+			"descriptions":
+			[
+				{
+					"type":"text",
+					"text":"Clara's room is very colourful and beautifully decorated with reproductions of famous paintings and engravings from picture books. The main window has a beautiful view of the mountains.<br/>The door leads to the large corridor."
+				}
+			],
+			"contexte":""
+		},
+        "chambreJordi":
+		{
+			"title":"Jordi's Room",
+			"occupants":[], 
+			"evenement":"none", 
+			"descriptions":
+			[
+				{
+					"type":"text",
+					"text":"Jordi's room is a mess. The bed is not made up, elegant clothes are scattered here and there and on the desk are books by socialist philosophers.<br/>The door leads to the large corridor."
+				}
+			],
+			"contexte":""
+		},
+		"toit":
+		{
+			"title":"The Roof",
+			"occupants":[], 
+			"evenement":"none", 
+			"descriptions":
+			[
+				{
+					"type":"text",
+					"text":"The roof is a masterpiece of modernist architecture: in the middle of a red tiled floor arranged in strangely varied slopes, the huge conical structure that brings light to the ballroom stands out. It is covered, along with the other chimneys that gush out here and there or the thick railing with its view of the mountains, with <i>trencadis</i>, this joyful assembly of pieces of coloured ceramics. The door leads to the large corridor."
+				}
+			],
+			"contexte":""
+		}
+    },
+"doors":
+    [
+        {"entree":"salon", "sortie":"terrasse", "etat":false},
+        {"entree":"salon", "sortie":"hall", "etat":true},
+        {"entree":"hall", "sortie":"ballroom", "etat":true},
+        {"entree":"ballroom", "sortie":"couloir", "etat":true},
+        {"entree":"couloir", "sortie":"chambreJosep", "etat":true},
+        {"entree":"couloir", "sortie":"chambreMaria", "etat":true},
+        {"entree":"couloir", "sortie":"chambreClara", "etat":true},
+        {"entree":"couloir", "sortie":"chambreJordi", "etat":true},
+		{"entree":"couloir", "sortie":"toit", "etat":true}
+    ]
+}
